@@ -1,0 +1,38 @@
+﻿<!--_meta 作为公共模版分离出去-->
+{include file="public/meta" /}
+<!--/meta 作为公共模版分离出去-->
+
+<title>{$title|default=""}</title>
+{block name="seo"}
+<meta name="keywords" content="">
+<meta name="description" content="">
+{/block}
+</head>
+<body>
+<!--_header 作为公共模版分离出去-->
+{include file="public/header" /}
+<!--/_header 作为公共模版分离出去-->
+
+<!--_menu 作为公共模版分离出去-->
+{include file="public/menu" /}
+<!--/_menu 作为公共模版分离出去-->
+
+<section class="Hui-article-box">
+	<nav class="breadcrumb"><i class="Hui-iconfont"></i> <a href="/" class="maincolor">首页</a> <span class="c-999 en">&gt;</span><span class="c-666">空白页</span></nav>
+	<div class="Hui-article">
+		<article class="cl pd-20">
+			{block name="content"}{/block}
+		</article>
+	</div>
+</section>
+
+<!--_footer 作为公共模版分离出去-->
+{include file="public/footer" /}
+<!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+{block name="js"}
+{/block}
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>
